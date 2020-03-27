@@ -9,6 +9,7 @@ branches:
     - master
   
 install:
+  - dir
   #- '"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" amd64'
   #- cd C:\projects
   #- git clone https://github.com/ChristianFeldmann/Qt5-YUView-MT Qt --depth 1
