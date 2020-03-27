@@ -1,0 +1,32 @@
+  
+image: Visual Studio 2017
+configuration: Release
+platform:
+  - x64
+clone_folder: C:\projects\ffmpeg
+
+branches:
+  - master
+  
+install:
+  #- '"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" amd64'
+  #- cd C:\projects
+  #- git clone https://github.com/ChristianFeldmann/Qt5-YUView-MT Qt --depth 1
+  #- set QTDIR=C:\projects\Qt\5.11-release
+  #- set PATH=%PATH%;%QTDIR%\bin
+  # Download libde265_internals (needed later to pack the installer)
+  #- curl -L -o libde265.dll https://github.com/ChristianFeldmann/libde265/releases/download/v1.1/libde265.dll
+
+build_script:
+  # activate the automatic update feature
+  #- cd C:\projects\YUView
+  #- C:\msys64\usr\bin\sed.exe -i -- "s/#define UPDATE_FEATURE_ENABLE 0/#define UPDATE_FEATURE_ENABLE 1/g" source/typedef.h
+  # start compiling
+  #- qmake
+  #- where nmake
+  #- nmake
+
+after_build:
+
+ 
+artifacts:
