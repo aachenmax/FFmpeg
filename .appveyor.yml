@@ -22,8 +22,8 @@ install:
   #- curl -L -o libde265.dll https://github.com/ChristianFeldmann/libde265/releases/download/v1.1/libde265.dll
 
 build_script:
-  - C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat
-  - C:\msys64\msys2_shell.cmd
+  - call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars64.bat"
+  - call "C:\msys64\msys2_shell.cmd"
   # activate the automatic update feature
   #- cd C:\projects\YUView
   #- C:\msys64\usr\bin\sed.exe -i -- "s/#define UPDATE_FEATURE_ENABLE 0/#define UPDATE_FEATURE_ENABLE 1/g" source/typedef.h
